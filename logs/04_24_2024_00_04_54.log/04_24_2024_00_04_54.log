@@ -1,0 +1,7 @@
+[ 2024-04-24 00:04:56,649 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2024-04-24 00:04:56,658 ] 224 werkzeug - INFO -  * Debugger PIN: 626-580-910
+[ 2024-04-24 00:08:31,276 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2024 00:08:31] "GET / HTTP/1.1" 200 -
+[ 2024-04-24 00:08:31,420 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2024 00:08:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2024-04-24 00:08:50,523 ] 61 root - INFO - Dataframe Gathered
+[ 2024-04-24 00:08:53,024 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2024 00:08:53] "POST /predict HTTP/1.1" 200 -
+[ 2024-04-24 00:08:53,055 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2024 00:08:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

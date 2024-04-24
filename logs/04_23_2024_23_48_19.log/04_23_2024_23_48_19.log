@@ -1,0 +1,39 @@
+[ 2024-04-23 23:48:22,568 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2024-04-23 23:48:36,981 ] 26 root - INFO - Data ingestion method Started
+[ 2024-04-23 23:48:37,439 ] 29 root - INFO - Dataset read as pandas Dataframe
+[ 2024-04-23 23:48:39,991 ] 35 root - INFO - Train Test Split Initiated
+[ 2024-04-23 23:48:42,408 ] 41 root - INFO - Ingestion of Data is completed
+[ 2024-04-23 23:48:42,942 ] 80 root - INFO - Read train and test data completed
+[ 2024-04-23 23:48:42,988 ] 81 root - INFO - Train Dataframe Head : 
+       id  carat      cut color clarity  depth  table     x     y     z  price
+0   83475   0.32  Premium     E     SI1   61.6   58.0  4.38  4.41  2.71    614
+1  160324   1.20  Premium     F     VS2   62.6   57.0  6.81  6.76  4.25   7002
+2  101740   1.50    Ideal     I     VS2   62.2   55.0  7.30  7.26  4.53   9347
+3  180341   1.67  Premium     I     SI2   61.9   59.0  7.65  7.61  4.71   8525
+4   48480   1.00     Good     H     VS2   63.7   60.0  6.34  6.30  4.02   5217
+[ 2024-04-23 23:48:43,005 ] 82 root - INFO - Test Dataframe Head  : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0   14868   0.50      Ideal     D     SI1   62.1   57.0  5.05  5.08  3.14   1355
+1  165613   2.00  Very Good     G     SI2   59.5   57.0  8.08  8.15  4.89  14691
+2   96727   0.27    Premium     E    VVS1   60.5   59.0  4.19  4.16  2.52    844
+3  145593   0.32    Premium     I    VVS1   61.2   59.0  4.43  4.44  2.71    707
+4  118689   1.19      Ideal     H     SI1   62.5   56.0  6.77  6.81  4.23   5797
+[ 2024-04-23 23:48:43,005 ] 84 root - INFO - Obtaining preprocessing object
+[ 2024-04-23 23:48:43,005 ] 57 root - INFO - Categorical Columns : ['cut', 'color', 'clarity']
+[ 2024-04-23 23:48:43,005 ] 58 root - INFO - Numerical Columns   : ['carat', 'depth', 'table', 'x', 'y', 'z']
+[ 2024-04-23 23:48:43,036 ] 97 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2024-04-23 23:48:44,007 ] 111 root - INFO - Preprocessor pickle file saved
+[ 2024-04-23 23:48:44,007 ] 38 root - INFO - Splitting Dependent and Independent variables from train and test data
+[ 2024-04-23 23:51:34,264 ] 63 root - INFO - Model Report : {'Linear Regression': 0.9372975155452951, 'Lasso': 0.9372637996466201, 'Ridge': 0.937296862070099, 'K-Neighbors Regressor': 0.972113745327987, 'Decision Tree': 0.9572666557062735, 'Random Forest Regressor': 0.9771209693648457, 'XGBRegressor': 0.9787904894720847, 'CatBoosting Regressor': 0.9791856803920621, 'GradientBoosting Regressor': 0.9761322912414202, 'AdaBoost Regressor': 0.8303044609909118}
+[ 2024-04-23 23:51:34,272 ] 78 root - INFO - Best Model Found , Model Name : CatBoosting Regressor , R2 Score : 0.9791856803920621
+[ 2024-04-23 23:51:34,272 ] 79 root - INFO - Hyperparameter tuning started for catboost
+[ 2024-04-23 23:56:02,349 ] 103 root - INFO - Hyperparameter tuning complete for Catboost
+[ 2024-04-23 23:56:02,349 ] 105 root - INFO - Hyperparameter tuning started for KNN
+[ 2024-04-23 23:59:31,318 ] 125 root - INFO - Hyperparameter tuning Complete for KNN
+[ 2024-04-23 23:59:31,318 ] 127 root - INFO - Voting Regressor model training started
+[ 2024-04-24 00:00:44,518 ] 134 root - INFO - Voting Regressor Training Completed
+[ 2024-04-24 00:00:44,596 ] 140 root - INFO - Model pickle file saved
+[ 2024-04-24 00:00:49,832 ] 145 root - INFO - Test MAE : 293.56719198521836
+[ 2024-04-24 00:00:49,832 ] 146 root - INFO - Test RMSE : 575.1705706953121
+[ 2024-04-24 00:00:49,832 ] 147 root - INFO - Test R2 Score : 0.9795278544958242
+[ 2024-04-24 00:00:49,832 ] 148 root - INFO - Final Model Training Completed
