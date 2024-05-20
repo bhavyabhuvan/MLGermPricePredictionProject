@@ -14,10 +14,13 @@ There are 10 independent variables (including `id`):
 * `table` : A diamond's table is the facet which can be seen when the stone is viewed face up.
 * `x` : Diamond X dimension
 * `y` : Diamond Y dimension
-* `x` : Diamond Z dimension
+* `z` : Diamond Z dimension
 
 Target variable:
 * `price`: Price of the given Diamond.
+
+Price is highly positive correlated with carat,x,y,z.
+Premium cut daimond cost is high,clarity vs1 and vs2 will have high cost compare to other.
 
 Dataset Source Link :
 [https://www.kaggle.com/competitions/playground-series-s3e8/data?select=train.csv](https://www.kaggle.com/competitions/playground-series-s3e8/data?select=train.csv)
